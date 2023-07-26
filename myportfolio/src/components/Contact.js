@@ -156,7 +156,12 @@ function Contact() {
                     color: "#000000",
                   }}
                 >
-                  <img src={call} width={"80px"} height={"80px"} />
+                  <img
+                    src={call}
+                    width={"80px"}
+                    height={"80px"}
+                    alt="calling gif"
+                  />
                   CONTACT
                 </h1>
               </div>
@@ -176,9 +181,14 @@ function Contact() {
               <h4 className="github">
                 <a href="https://github.com/prasanth-ravichandran">
                   {" "}
-                  <img src={link} width={"30px"} height={"30px"} />
+                  <img
+                    src={link}
+                    width={"30px"}
+                    height={"30px"}
+                    alt="link gif"
+                  />
                 </a>
-                <img src={github} />
+                <img src={github} alt="github gif" />
               </h4>
               <h4 className="email">
                 <i

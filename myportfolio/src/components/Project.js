@@ -172,6 +172,7 @@ function Project() {
                       src={Contact}
                       width={"300px"}
                       height={"200px"}
+                      alt="contact site"
                       style={{ borderRadius: "20px", marginTop: "50px" }}
                     ></img>
                   </a>
@@ -187,6 +188,7 @@ function Project() {
                       width={"300px"}
                       height={"200px"}
                       style={{ borderRadius: "20px" }}
+                      alt="gym site"
                     />
                   </a>
                   <p className="text-dark" style={{ fontFamily: "initial" }}>
@@ -201,6 +203,7 @@ function Project() {
                       width={"300px"}
                       height={"200px"}
                       style={{ borderRadius: "20px" }}
+                      alt="obesity charts"
                     />
                   </a>
                   <p className="text-dark" style={{ fontFamily: "initial" }}>
@@ -218,6 +221,7 @@ function Project() {
                       width={"300px"}
                       height={"200px"}
                       style={{ borderRadius: "15px" }}
+                      alt="portal"
                     />
                   </a>
                   <p className="text-dark" style={{ fontFamily: "initial" }}>
@@ -236,6 +240,7 @@ function Project() {
                       width={"300px"}
                       height={"200px"}
                       style={{ borderRadius: "15px" }}
+                      alt="e-commerce-site"
                     />
                   </a>
                   <p className="text-dark" style={{ fontFamily: "initial" }}>
@@ -253,6 +258,7 @@ function Project() {
                       width={"300px"}
                       height={"200px"}
                       style={{ borderRadius: "15px" }}
+                      alt="form vlaidation site"
                     />
                   </a>
                   <p className="text-dark" style={{ fontFamily: "initial" }}>

@@ -160,7 +160,7 @@ function Skill() {
               >
                 <i className="fa fa-arrow-left fa-2x" aria-hidden="true" />
               </a>
-              <img className="Skills mt-1" src={system} />
+              <img className="Skills mt-1" src={system} alt="system img" />
               <a
                 className="btn btn-dark rounded-circle "
                 style={{ width: "50px", height: "50px" }}
@@ -217,7 +217,12 @@ function Skill() {
                     <div className="col-4 ">
                       <div className="img">
                         {" "}
-                        <img src={Html} width={"100px"} height={"100px"} />
+                        <img
+                          src={Html}
+                          width={"100px"}
+                          height={"100px"}
+                          alt="html logo"
+                        />
                         <p
                           className="skill-name fw-bolder fs-5 "
                           style={{
@@ -239,7 +244,12 @@ function Skill() {
                     </div>
                     <div className="col-4">
                       <div className="img">
-                        <img src={css} width={"100px"} height={"100px"} />
+                        <img
+                          src={css}
+                          width={"100px"}
+                          height={"100px"}
+                          alt="css logo"
+                        />
                         <p
                           className="skill-name fs-5 fw-bolder"
                           style={{
@@ -260,7 +270,12 @@ function Skill() {
                     </div>
                     <div className="col-4">
                       <div className="img">
-                        <img src={bootstrap} width={"100px"} height={"100px"} />
+                        <img
+                          src={bootstrap}
+                          width={"100px"}
+                          height={"100px"}
+                          alt="bootstrap logo"
+                        />
                         <p
                           className="skill-name fs-5 fw-bolder"
                           style={{
@@ -281,7 +296,12 @@ function Skill() {
                     </div>
                     <div className="col-4">
                       <div className="img mt-3">
-                        <img src={js} width={"100px"} height={"100px"} />
+                        <img
+                          src={js}
+                          width={"100px"}
+                          height={"100px"}
+                          alt="javascript logo"
+                        />
                         <p
                           className="skill-name fs-5 fw-bolder"
                           style={{ fontFamily: "cursive", color: "#000000" }}
@@ -298,7 +318,12 @@ function Skill() {
                     </div>
                     <div className="col-4">
                       <div className="img mt-3">
-                        <img src={react} width={"100px"} height={"100px"} />
+                        <img
+                          src={react}
+                          width={"100px"}
+                          height={"100px"}
+                          alt="react logo"
+                        />
                         <p
                           className="skill-name fs-5 fw-bolder"
                           style={{
@@ -319,7 +344,12 @@ function Skill() {
                     </div>
                     <div className="col-4">
                       <div className="img mt-3">
-                        <img src={github} width={"100px"} height={"100px"} />
+                        <img
+                          src={github}
+                          width={"100px"}
+                          height={"100px"}
+                          alt="github logo"
+                        />
                         <p
                           className="skill-name fs-5 fw-bolder"
                           style={{

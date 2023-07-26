@@ -169,7 +169,7 @@ function AboutMe() {
               cursor: "pointer",
             }}
           >
-            CONTACT<img src={call} width={"40px"}></img>
+            CONTACT<img src={call} width={"40px"} alt="dialer"></img>
           </a>
           <div className="d-flex justify-content-between">
             <a

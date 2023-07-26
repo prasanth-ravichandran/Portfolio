@@ -156,6 +156,7 @@ function Content() {
             src={gif}
             width={"20px"}
             height={"20px"}
+            alt="gif"
           ></img>
         </motion.a>{" "}
         <Link to={"/about"}>
