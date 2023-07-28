@@ -1,13 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 import gif from "../assets/gif.gif";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-
+import { Offcanvas, OffcanvasBody } from "reactstrap";
 function Content() {
+  const [show, setshow] = useState(false);
+  const handleOffCanvas = () => {
+    setshow(!show);
+  };
   return (
     <>
       <motion.nav
-        className="navbar navbar-expand-lg nav text-warning "
+        className="navbar navbar-expand-lg nav text-dark "
         id="NavBar"
         role="navigation"
         style={{
@@ -22,7 +26,7 @@ function Content() {
         }}
       >
         <div
-          className="container"
+          className="container "
           style={{ display: "flex", fontFamily: "initial" }}
         >
           <button
@@ -35,7 +39,11 @@ function Content() {
             aria-aria-label="Toggler-Navigation"
           >
             <span>
-              <i className="fa fa-bars" aria-hidden="true"></i>
+              <i
+                className="fa fa-bars"
+                aria-hidden="true"
+                onClick={handleOffCanvas}
+              ></i>
             </span>
           </button>
           <div
@@ -138,7 +146,7 @@ function Content() {
         </h1>
         <motion.a
           className="btn btn-light"
-          href="https://drive.google.com/file/d/1Mu4A-x4PkiQalEAHcnfV4pduphNF1z3g/view?usp=sharing"
+          href="https://drive.google.com/file/d/1VuQapKMBhzyILUmdp4ps-sALKZ3zVoFD/view?usp=sharing"
           style={{
             textDecoration: "none",
             fontFamily: "initial",
@@ -185,6 +193,41 @@ function Content() {
           </motion.a>
         </Link>
       </motion.div>
+      <Offcanvas
+        isOpen={show}
+        toggle={handleOffCanvas}
+        style={{ backgroundColor: "rgb(206, 206, 206, 0.5)" }}
+      >
+        <OffcanvasBody>
+          <div className="container">
+            <div className=" mb-3 mt-3 nav-item">
+              <a className="nav-link" href="/">
+                Home
+              </a>
+            </div>
+            <div className="mb-3 nav-item">
+              <a className="nav-link" href="/about">
+                About
+              </a>
+            </div>
+            <div className="mb-3 nav-item">
+              <a className="nav-link" href="/skill">
+                Skill
+              </a>
+            </div>
+            <div className="mb-3 nav-item">
+              <a className="nav-link" href="/project">
+                Project
+              </a>
+            </div>
+            <div className="mb-3 nav-item">
+              <a className="nav-link" href="/contact">
+                Contact
+              </a>
+            </div>
+          </div>
+        </OffcanvasBody>
+      </Offcanvas>
     </>
   );
 }

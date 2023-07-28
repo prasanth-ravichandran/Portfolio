@@ -6,7 +6,12 @@ import ObesityCharts from "../assets/ObesityCharts.png";
 import ECOMMERCE from "../assets/ECOMMERCE.png";
 import Form_Validation from "../assets/Form_Validation.png";
 import CRUDOperation from "../assets/CRUD-Operation.png";
+import { Offcanvas, OffcanvasBody } from "reactstrap";
 function Project() {
+  const [show, setshow] = useState(false);
+  const handleOffCanvas = () => {
+    setshow(!show);
+  };
   return (
     <>
       <motion.nav
@@ -38,6 +43,7 @@ function Project() {
               <i className="fa fa-bars" aria-hidden="true"></i>
             </span>
           </button>
+
           <div
             className="collapse navbar-collapse "
             id="navbarSupportedContent"
@@ -115,7 +121,7 @@ function Project() {
       </motion.nav>
       <div style={{ opacity: "1" }}>
         <motion.div
-          className="container project mt-3 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6"
+          className="container project"
           initial={{ opacity: "0", y: 300 }}
           animate={{ opacity: "1", y: 15 }}
           transition={{ ease: "easeOut", duration: "1.5" }}
@@ -214,7 +220,7 @@ function Project() {
                   className="col-4 mt-5 mb-5"
                   whileHover={{ scale: 1.2 }}
                 >
-                  <a href="https://github.com/prasanth-ravichandran/crud">
+                  <a href="	https://student-portal-site.vercel.app">
                     {" "}
                     <img
                       src={CRUDOperation}
@@ -233,7 +239,7 @@ function Project() {
                   className="col-4 mt-5 mb-5"
                   whileHover={{ scale: 1.2 }}
                 >
-                  <a href="https://github.com/prasanth-ravichandran/Projectreact">
+                  <a href="	https://e-commerce-shop-prasanth.netlify.app">
                     {" "}
                     <img
                       src={ECOMMERCE}
@@ -251,7 +257,7 @@ function Project() {
                   className="col-4 mt-5 mb-5"
                   whileHover={{ scale: 1.2 }}
                 >
-                  <a href="https://github.com/prasanth-ravichandran/Form_Validation">
+                  <a href="https://github.com/prasanth-ravichandran/Form-Validation">
                     {" "}
                     <img
                       src={Form_Validation}
@@ -270,6 +276,41 @@ function Project() {
           </div>
         </motion.div>
       </div>
+      <Offcanvas
+        isOpen={show}
+        toggle={handleOffCanvas}
+        style={{ backgroundColor: "rgb(206, 206, 206, 0.5)" }}
+      >
+        <OffcanvasBody>
+          <div className="container">
+            <div className=" mb-3 mt-3 nav-item">
+              <a className="nav-link" href="/">
+                Home
+              </a>
+            </div>
+            <div className="mb-3 nav-item">
+              <a className="nav-link" href="/about">
+                About
+              </a>
+            </div>
+            <div className="mb-3 nav-item">
+              <a className="nav-link" href="/skill">
+                Skill
+              </a>
+            </div>
+            <div className="mb-3 nav-item">
+              <a className="nav-link" href="/project">
+                Project
+              </a>
+            </div>
+            <div className="mb-3 nav-item">
+              <a className="nav-link" href="/contact">
+                Contact
+              </a>
+            </div>
+          </div>
+        </OffcanvasBody>
+      </Offcanvas>
     </>
   );
 }
